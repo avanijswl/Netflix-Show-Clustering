@@ -1,0 +1,8 @@
+Requirements for Netflix Clustering DS Project - Avani Jaiswal
+
+Libraries used:
+1. Pandas
+2. NumPy
+3. Seaborn
+4. Matplotlib
+5. ScikitLearn
