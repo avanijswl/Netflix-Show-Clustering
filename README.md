@@ -49,6 +49,17 @@ The dataset contains the following columns:
 
 ---
 
+## Why KMeans Clustering is used?
+
+Grouping different Netflix shows into similar groups was based on : <br/>
+-Genre -> type of content.<br/>
+-Rating -> target audience preference.<br/>
+-Duration -> how long the show is.<br/>
+
+We used K-Means clustering because our task was an unsupervised learning problem, where there were no predefined labels like “comedy” or “action.” K-Means helps find natural groupings in the data without the need for such categories. Since features like genre were converted to numerical form through encoding, and ratings or durations were already numeric, K-Means could process them effectively. It is also simple, fast, and scalable, making it suitable for handling large datasets efficiently using Python’s scikit-learn library. Additionally, the results are interpretable, as the cluster centroids reveal the defining characteristics of each group—for example, one cluster might represent short, animated family shows, while another could represent long, mature dramas.
+
+---
+
 ## 📊 Results
 - The Elbow Method indicated that **k = 4** clusters give a good balance between simplicity and accuracy.
 - Each cluster represents shows with similar:
@@ -57,7 +68,7 @@ The dataset contains the following columns:
   - Rating patterns
 
 Example output (scatterplot):
-![Netflix Show Clusters](https://raw.githubusercontent.com/avanijswl/Netflix-Show-Clustering/main/874af823-872d-400e-9b91-4f0b9cee40b0.png)
+![Netflix Show Clusters](https://github.com/avanijswl/Netflix-Show-Clustering/blob/main/clusters.png)
 
 
 ---
